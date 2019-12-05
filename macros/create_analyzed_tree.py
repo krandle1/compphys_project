@@ -44,7 +44,7 @@ weights_compare_list = [['w_{}_compare'.format(i),'Timing weight vs. amplitude w
 """
 Define functions for plotting, iteratively if needed
 """
-gROOT.SetBatch(1) #don't output on Draw function
+ROOT.gROOT.SetBatch(1) #don't output on Draw function
 
 #Use root to create a 1-D histogram from parameters set above
 def create_1Dhisto(tree_,hname_,title_,binparams_,parameter_,cuts_):
